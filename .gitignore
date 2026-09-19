@@ -132,3 +132,6 @@ _modules/*
 
 # Ignore the design document
 IT0049 - TSA1 - Tasks for Today Management System (CodeIgniter).docx
+
+# Archives
+*.zip
