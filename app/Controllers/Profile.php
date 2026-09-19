@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Controllers;
+
+use App\Models\UserModel;
+
+class Profile extends BaseController
+{
+    public function index()
+    {
+        $userModel = new UserModel();
+        $user = $userModel->first() ?? [
+            'id'         => '',
+            'username'   => 'Guest',
+            'full_name'  => '',
+            'email'      => '',
+            'created_at' => '',
+        ];
+
+        return view('profile', $user);
+    }
+}
