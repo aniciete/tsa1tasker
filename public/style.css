@@ -4,9 +4,9 @@
     color 300ms ease;
 }
 
-*:focus {
-  background-color: rgba(221, 72, 20, 0.2);
-  outline: none;
+*:focus-visible {
+  outline: 2px solid #dd4814;
+  outline-offset: 2px;
 }
 
 html,
